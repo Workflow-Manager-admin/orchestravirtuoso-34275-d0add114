@@ -305,6 +305,9 @@ button {
 }
 
 /* Card style for layout blocks, fully fluid */
+/* --- SCRIPT-LEGIBLE CARD TYPOGRAPHY -- 
+   Cards use large script font; keep spacing for legibility.
+*/
 .card {
   background: var(--card-bg, #202944);
   border-radius: 12px;
@@ -321,6 +324,9 @@ button {
   flex: 1 1 auto;
   font-family: 'Great Vibes', cursive;
   font-size: 1.19rem;
+  letter-spacing: 0.028em;
+  line-height: 1.22;
+  font-weight: 400;
 }
 .card:hover {
   box-shadow: 0 4px 28px 0 rgba(61, 54, 98, 0.13);
