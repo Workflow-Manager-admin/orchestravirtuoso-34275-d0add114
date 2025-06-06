@@ -166,35 +166,85 @@ function Settings() {
       {/* USER PROFILE VIEW/EDIT */}
       <SectionCard title="User Profile" icon={profile.avatar}>
         {!editingProfile ? (
-          <div style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: 25,
-            alignItems: "center"
-          }}>
-            <span aria-label="profile avatar" style={{
-              fontSize: 44,
-              marginRight: 12,
-              borderRadius: "50%",
-              background: "rgba(191,161,74,0.09)",
-              padding: "11px 16px"
-            }}>{profile.avatar}</span>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 400, color: "var(--text-color)", fontSize: "1.28rem", fontFamily: "'Great Vibes', cursive", marginBottom: 2 }}>{profile.name}</div>
-              <div className="description" style={{ fontSize: "1.02rem" }}>@{profile.username} &bull; {profile.email}</div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 25,
+              alignItems: "center",
+              flexWrap: "wrap",
+              width: "100%",
+              boxSizing: "border-box"
+            }}
+          >
+            <span
+              aria-label="profile avatar"
+              style={{
+                fontSize: 44,
+                marginRight: 10,
+                borderRadius: "50%",
+                background: "rgba(191,161,74,0.09)",
+                padding: "11px 16px",
+                minWidth: 60,
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 1px 8px 0 rgba(191,161,74,0.07)"
+              }}
+            >
+              {profile.avatar}
+            </span>
+            <div
+              style={{
+                flex: 1,
+                minWidth: 0,
+                display: "flex",
+                flexDirection: "column"
+              }}
+            >
+              <div
+                style={{
+                  fontWeight: 400,
+                  color: "var(--text-color)",
+                  fontSize: "1.28rem",
+                  fontFamily: "'Great Vibes', cursive",
+                  marginBottom: 2,
+                  overflowWrap: "anywhere"
+                }}
+              >
+                {profile.name}
+              </div>
+              <div className="description" style={{ fontSize: "1.02rem", overflowWrap: "anywhere" }}>
+                @{profile.username} &bull; {profile.email}
+              </div>
               {profile.bio && (
-                <div className="description" style={{ marginTop: 8, fontSize: "1.04rem", maxWidth: 380 }}>{profile.bio}</div>
+                <div
+                  className="description"
+                  style={{
+                    marginTop: 8,
+                    fontSize: "1.04rem",
+                    maxWidth: 380,
+                    overflowWrap: "break-word"
+                  }}
+                >
+                  {profile.bio}
+                </div>
               )}
             </div>
-            <button className="btn"
+            <button
+              className="btn"
               style={{
                 marginLeft: "auto",
                 background: "var(--secondary)",
                 color: "#1A2236",
                 borderRadius: 7,
-                minWidth: 80
+                minWidth: 80,
+                maxHeight: 51
               }}
-              onClick={() => { setEditingProfile(true); setProfileEdit({ ...profile }); }}
+              onClick={() => {
+                setEditingProfile(true);
+                setProfileEdit({ ...profile });
+              }}
             >
               Edit
             </button>
