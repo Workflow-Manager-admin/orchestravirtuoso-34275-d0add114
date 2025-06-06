@@ -6,11 +6,11 @@
   --secondary: #BFA14A;
   --accent: #2E4057;
 
-  /* Supporting palette */
+  /* Light brown (tan) for global text */
+  --text-color: #D2B48C;
+  --text-secondary: rgba(210, 180, 140, 0.78);
   --base-light: var(--secondary); /* Use secondary gold as highlight */
   --base-dark: var(--primary);    /* Use primary navy as background */
-  --text-color: #fff;
-  --text-secondary: rgba(255, 255, 255, 0.82);
   --border-color: rgba(191, 161, 74, 0.18); /* gold accent border */
   --card-bg: #202944;
   --button-shadow: 0 2px 16px 0 rgba(42, 50, 90, 0.14);
