@@ -83,66 +83,88 @@ function Lessons() {
           width: "100%",
         }}
       >
-        {videoLessons.map((lesson, i) => (
-          <article
-            className="card"
-            key={lesson.title}
-            tabIndex={0}
-            aria-label={`Lesson: ${lesson.title}`}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "stretch",
-              gap: "3vw",
-              background: "var(--card-bg, #202944)",
-              border: "1.5px solid var(--border-color, #d1be65)",
-              boxShadow: "0 2px 14px 0 rgba(40,48,77,0.05)",
-              borderRadius: "13px",
-              padding: "2vw 2vw",
-              margin: 0,
-              // Responsive stack for mobile
-              flexWrap: "wrap",
-            }}
-          >
-            {/* Video Embed (aspect-ratio for responsive) */}
-            <div
+        {videoLessons.map((lesson, i) => {
+          // Helper to convert YouTube watch URL to embed
+          function getEmbedUrl(url) {
+            if (!url) return "";
+            // Example: https://www.youtube.com/watch?v=EQNwt1_uTxc
+            const match = url.match(
+              /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w\-]+)/
+            );
+            if (match && match[1]) {
+              return `https://www.youtube.com/embed/${match[1]}`;
+            }
+            // If already /embed/, return as is
+            if (url.includes("youtube.com/embed/")) {
+              return url;
+            }
+            // fallback
+            return url;
+          }
+          return (
+            <article
+              className="card"
+              key={lesson.title}
+              tabIndex={0}
+              aria-label={`Lesson: ${lesson.title}`}
               style={{
-                flex: "0 0 350px",
-                minWidth: 240,
-                maxWidth: 410,
-                width: "100%",
                 display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                borderRadius: 9,
-                overflow: "hidden",
-                boxShadow: "0 3px 30px 0 rgba(60,63,94,0.14)",
-                background: "#191b28",
-                marginRight: 0,
-                marginBottom: "auto",
+                flexDirection: "row",
+                alignItems: "stretch",
+                gap: "3vw",
+                background: "var(--card-bg, #202944)",
+                border: "1.5px solid var(--border-color, #d1be65)",
+                boxShadow: "0 2px 14px 0 rgba(40,48,77,0.05)",
+                borderRadius: "13px",
+                padding: "2vw 2vw",
+                margin: 0,
+                // Responsive stack for mobile
+                flexWrap: "wrap",
               }}
             >
-              <iframe
-                src={lesson.url}
-                title={lesson.title}
-                width="100%"
-                height="220"
+              {/* Video Embed (aspect-ratio for responsive) */}
+              <div
                 style={{
-                  border: "none",
-                  width: "100%",
+                  flex: "0 0 350px",
+                  minWidth: 240,
                   maxWidth: 410,
-                  minWidth: 220,
-                  minHeight: 180,
-                  aspectRatio: "16/9",
-                  borderRadius: 7,
-                  background: "#15162a",
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: 9,
+                  overflow: "hidden",
+                  boxShadow: "0 3px 30px 0 rgba(60,63,94,0.14)",
+                  background: "#191b28",
+                  marginRight: 0,
+                  marginBottom: "auto",
                 }}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                tabIndex={0}
-                aria-label={lesson.title}
-              />
-            </div>
+              >
+                <iframe
+                  src={getEmbedUrl(lesson.url)}
+                  title={lesson.title}
+                  width="100%"
+                  height="220"
+                  style={{
+                    border: "none",
+                    width: "100%",
+                    maxWidth: 410,
+                    minWidth: 220,
+                    minHeight: 180,
+                    aspectRatio: "16/9",
+                    borderRadius: 7,
+                    background: "#15162a",
+                  }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  tabIndex={0}
+                  aria-label={lesson.title}
+                />
+              </div>
+            {/* Lesson Description, etc ... (rest remains unchanged) */}
+            {/* ... */}
+          );
+        })}
             {/* Lesson Description */}
             <div
               style={{
