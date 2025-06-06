@@ -543,13 +543,49 @@ function Settings() {
       {/* Responsive inline CSS */}
       <style>
         {`
-        @media (max-width: 700px) {
-          .card { font-size: 1.04rem !important; padding: 1.1rem 1vw !important; }
-          section.card { max-width: 99vw !important; padding: 1.1rem 1.5vw !important; }
+        @media (max-width: 880px) {
+          .card,
+          section.card {
+            max-width: 99vw !important;
+            width: 99vw !important;
+            box-sizing: border-box;
+            padding-left: 2vw !important;
+            padding-right: 2vw !important;
+          }
+          .card form,
+          .card > div {
+            max-width: 96vw !important;
+          }
         }
-        label { font-size: 1.01rem; }
+        @media (max-width: 700px) {
+          .card { font-size: 1.035rem !important; padding: 1.05rem 0.7vw !important; }
+          section.card { max-width: 99vw !important; padding: 1.05rem 1.1vw !important; }
+          .card > div, .card > form {
+            flex-direction: column !important;
+            gap: 14px !important;
+            max-width: 100vw !important;
+            width: 100%;
+          }
+          .card [aria-label="profile avatar"] {
+            margin-bottom: 8px !important;
+            margin-right: 0 !important;
+          }
+          .card button.btn {
+            margin-left: 0 !important;
+            min-width: 84px;
+            width: 92vw;
+            margin-top: 12px;
+          }
+        }
+        label {
+          font-size: 1.01rem;
+        }
         input[type="text"], input[type="email"], input[type="password"], textarea {
           margin-top: 2px;
+        }
+        /* Prevent Settings container overflow */
+        .container {
+          overflow-x: hidden !important;
         }
         `}
       </style>

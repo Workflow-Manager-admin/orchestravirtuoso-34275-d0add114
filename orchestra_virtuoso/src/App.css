@@ -178,6 +178,7 @@ b {
   padding: 0 3vw;
   box-sizing: border-box;
   display: block;
+  overflow-x: hidden;
 }
 @media (min-width: 1200px) {
   .container {
