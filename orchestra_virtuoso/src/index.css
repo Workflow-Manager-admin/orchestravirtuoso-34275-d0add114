@@ -79,6 +79,7 @@ p, li, label, span, strong, b {
   font-size: 1.16rem;
 }
 
+/* SCRIPT NAV, BUTTONS, LOGO, CARDS: Always keep roomy for cursive! */
 nav,
 .navbar,
 .navbar-links,
@@ -86,9 +87,15 @@ nav,
 .navbar .btn,
 .navbar .btn-dropdown,
 .btn,
-button {
+button,
+.card,
+input,
+textarea,
+select {
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
+  letter-spacing: 0.031em;
+  line-height: 1.14;
 }
 
 /* Increase navigation font size for elegance */
