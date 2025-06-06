@@ -44,15 +44,17 @@ function Card({ icon, image, title, description, link, cta }) {
       </div>
       <div style={{ flex: 1 }}>
         <h3 style={{
-          fontFamily: "'Georgia', 'Times New Roman', Times, serif",
+          fontFamily: "'Great Vibes', cursive",
           color: "var(--text-color)",
-          fontWeight: 700,
+          fontWeight: 400,
           margin: 0,
           fontSize: "1.37rem"
         }}>{title}</h3>
         <div style={{
           color: "var(--text-secondary)",
           fontSize: "1.03rem",
+          fontFamily: "'Great Vibes', cursive",
+          fontWeight: 400,
           marginTop: 4,
           marginBottom: 10,
           lineHeight: 1.44

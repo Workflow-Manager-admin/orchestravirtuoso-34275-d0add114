@@ -145,14 +145,15 @@ function HomePage() {
         />
         <div className="subtitle" style={{
           color: "var(--secondary)",
-          fontWeight: 600,
+          fontWeight: 400,
+          fontFamily: "'Great Vibes', cursive",
           fontSize: "1.15rem",
           letterSpacing: 0.01
         }}>Immerse Yourself in the World of Violin</div>
         <h1 className="title"
             style={{
-              fontFamily: "'Georgia', 'Times New Roman', Times, serif",
-              fontWeight: 800,
+              fontFamily: "'Great Vibes', cursive",
+              fontWeight: 400,
               fontSize: "3.3rem",
               color: "var(--text-color)",
               margin: "4px 0"
@@ -160,13 +161,19 @@ function HomePage() {
           Orchestra<span style={{color: "var(--secondary)", letterSpacing: "0.018em"}}>Virtuoso</span>
         </h1>
         <div className="description"
-             style={{fontSize: "1.17rem", color: "var(--text-secondary)", marginBottom: 14}}>
+             style={{
+                fontSize: "1.17rem",
+                color: "var(--text-secondary)",
+                marginBottom: 14,
+                fontFamily: "'Great Vibes', cursive"
+              }}>
           Learn, practice, and connect in a refined, orchestral environment.
         </div>
         <button
           className="btn btn-large"
           style={{
-            fontWeight: 700,
+            fontFamily: "'Great Vibes', cursive",
+            fontWeight: 400,
             fontSize: "1.13rem",
             background: "var(--secondary)",
             color: "#1A2236",
