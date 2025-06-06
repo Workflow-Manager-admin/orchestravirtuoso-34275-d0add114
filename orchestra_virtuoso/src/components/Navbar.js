@@ -293,7 +293,8 @@ function NavLink({ to, label, active }) {
 const dropdownStyleItem = {
   padding: "11px 16px",
   display: "block",
-  fontWeight: 500,
+  fontFamily: "'Great Vibes', cursive",
+  fontWeight: 400,
   color: "var(--text-color)", // #D2B48C
   background: "none",
   border: "none",
