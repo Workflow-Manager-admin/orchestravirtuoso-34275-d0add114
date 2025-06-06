@@ -151,7 +151,7 @@ function HomePage() {
         }}>Immerse Yourself in the World of Violin</div>
         <h1 className="title"
             style={{
-              fontFamily: "'Merriweather', serif",
+              fontFamily: "'Georgia', 'Times New Roman', Times, serif",
               fontWeight: 800,
               fontSize: "3.3rem",
               color: "var(--base-light)",
