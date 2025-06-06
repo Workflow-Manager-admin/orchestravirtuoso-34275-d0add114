@@ -74,10 +74,10 @@ b {
 /* Responsive title and subtitle */
 .title {
   color: var(--text-color);
-  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-size: clamp(2.9rem, 8vw, 4.3rem);
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
-  line-height: 1.14;
+  line-height: 1.12;
   margin: 0;
   width: 100%;
   max-width: 100vw;
@@ -87,7 +87,7 @@ b {
   color: var(--secondary);
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: clamp(1.5rem, 2.9vw, 2.05rem);
 }
 
 /* App overlay: stretches fully under navbar */
@@ -255,8 +255,8 @@ b {
   border-radius: 12px;
   box-shadow: 0 2px 18px 0 rgba(30,40,60,0.11);
   border: 1.5px solid var(--border-color, #d1be65);
-  padding: min(2.3vw, 2.5rem) min(3vw, 2.5rem);
-  margin: 1.3vw 0;
+  padding: min(2.7vw, 3.2rem) min(4vw, 3.1rem);
+  margin: 1.8vw 0;
   width: 100%;
   max-width: unset;
   min-width: 0;
@@ -265,6 +265,7 @@ b {
   display: flex;
   flex: 1 1 auto;
   font-family: 'Great Vibes', cursive;
+  font-size: 1.19rem;
 }
 .card:hover {
   box-shadow: 0 4px 28px 0 rgba(61, 54, 98, 0.13);
