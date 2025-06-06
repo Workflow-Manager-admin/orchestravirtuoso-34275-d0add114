@@ -7,13 +7,16 @@
   padding: 0;
 }
 
+/* Import a free script font similar to 'Mr Stylish Script' */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 html, body {
   height: 100vh;
   min-height: 100vh;
   width: 100vw;
   min-width: 100vw;
   font-size: clamp(15px, 1.1vw, 20px);
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'Great Vibes', cursive;
   background-color: var(--base-dark, #1A2236);
   color: var(--text-color, #D2B48C);  /* Light brown */
   -webkit-font-smoothing: antialiased;
