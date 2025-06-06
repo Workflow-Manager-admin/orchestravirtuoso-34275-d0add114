@@ -129,20 +129,7 @@ function HomePage() {
                 position: "relative",
                 textAlign: "center"
                }}>
-        {/* Hero Violin Image, headline, sub, CTA */}
-        <img
-          src={require("./assets/violin.png")}
-          alt="Orchestral Violin"
-          style={{
-            width: 106,
-            height: 106,
-            objectFit: "contain",
-            marginBottom: 10,
-            filter: "drop-shadow(0 5px 22px #201f24ba)",
-            borderRadius: "14px"
-          }}
-          loading="lazy"
-        />
+        {/* Hero Violin Image removed to eliminate the 'no image' symbol */}
         <div className="subtitle" style={{
           color: "var(--secondary)",
           fontWeight: 400,
