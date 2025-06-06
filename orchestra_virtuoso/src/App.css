@@ -65,6 +65,10 @@ body {
 /* Legibility note: All typography using script font below
    should keep added spacing/line-height for readability! */
 /* Unified typography coloring */
+/* --- SCRIPT LEGIBILITY FOR HEADINGS AND BODY TEXT ---
+   These values increase spacing and line height for all script font elements.
+   Future changes: Retain or further boost these for accessibility!
+*/
 h1, h2, h3, h4, h5, h6,
 .title,
 .subtitle,
@@ -77,6 +81,10 @@ strong,
 b {
   color: var(--text-color);
   font-family: 'Great Vibes', cursive;
+  /* Improved spacing for cursive/script fonts */
+  letter-spacing: 0.035em;
+  line-height: 1.22;
+  font-weight: 400;
 }
 
 .description {
