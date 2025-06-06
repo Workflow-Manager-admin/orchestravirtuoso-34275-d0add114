@@ -23,12 +23,31 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Violin-themed background image */
+  background-image:
+    linear-gradient(
+      to bottom right,
+      rgba(26, 34, 54, 0.93) 0%,
+      rgba(46, 64, 87, 0.65) 65%,
+      rgba(191, 161, 74, 0.08) 100%
+    ),
+    url("./assets/violin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* Overlay panel effect for main app body to improve legibility */
+  background: rgba(27, 28, 42, 0.74);
+  backdrop-filter: blur(0.5px);
+  position: relative;
+  z-index: 1;
 }
 
 .navbar {
