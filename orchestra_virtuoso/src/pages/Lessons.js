@@ -161,8 +161,47 @@ function Lessons() {
                   aria-label={lesson.title}
                 />
               </div>
-            {/* Lesson Description, etc ... (rest remains unchanged) */}
-            {/* ... */}
+              {/* Lesson Description */}
+              <div
+                style={{
+                  flex: "1 1 0px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  minWidth: 0,
+                  padding: "0.4vw 0.8vw",
+                }}
+              >
+                <h2
+                  style={{
+                    fontFamily: "'Great Vibes', cursive",
+                    color: "var(--secondary)",
+                    fontWeight: 400,
+                    fontSize: "clamp(1.22rem, 2.3vw, 2rem)",
+                    margin: "0 0 8px 0",
+                    letterSpacing: "0.034em",
+                    textShadow: "0 2px 22px rgba(191,161,74,0.09)",
+                  }}
+                  id={`lesson-title-${i}`}
+                >
+                  {lesson.title}
+                </h2>
+                <p
+                  className="description"
+                  style={{
+                    margin: "0 0 0 0",
+                    color: "var(--text-secondary)",
+                    fontSize: "1.08rem",
+                    fontWeight: 400,
+                    letterSpacing: "0.03em",
+                    lineHeight: 1.45,
+                  }}
+                  id={`lesson-desc-${i}`}
+                >
+                  {lesson.desc}
+                </p>
+              </div>
+            </article>
           );
         })}
             {/* Lesson Description */}
