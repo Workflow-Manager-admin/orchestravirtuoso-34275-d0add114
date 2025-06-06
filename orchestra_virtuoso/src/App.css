@@ -73,13 +73,18 @@ b {
 
 .app {
   min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   /* Overlay panel effect for main app body to improve legibility */
   background: rgba(27, 28, 42, 0.74);
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.9px);
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .navbar {
