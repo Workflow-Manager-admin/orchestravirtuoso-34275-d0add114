@@ -155,21 +155,28 @@ a:hover {
   color: var(--secondary, #BFA14A);
 }
 
-/* Buttons: refined classical, subtle hover effect */
+/* Buttons: refined classical, subtle hover effect, and larger font */
 button,
 .btn {
-  font-family: inherit;
+  font-family: 'Great Vibes', cursive;
   background: var(--secondary, #BFA14A);
   color: var(--base-dark, #1A2236);
   border: none;
   border-radius: 4px;
-  padding: 10px 22px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  padding: 13px 30px;
+  font-size: 1.23rem;
+  font-weight: 400;
+  letter-spacing: 0.028em;
   cursor: pointer;
   box-shadow: var(--button-shadow);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+@media (max-width: 700px) {
+  button, .btn {
+    font-size: 1.05rem;
+    padding: 10px 15px;
+  }
 }
 button:hover,
 .btn:hover {
