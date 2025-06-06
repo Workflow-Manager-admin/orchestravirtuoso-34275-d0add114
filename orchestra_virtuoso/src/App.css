@@ -75,7 +75,8 @@ b {
 .title {
   color: var(--text-color);
   font-size: clamp(2.2rem, 6vw, 3.5rem);
-  font-weight: 600;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
   line-height: 1.14;
   margin: 0;
   width: 100%;
@@ -84,7 +85,8 @@ b {
 }
 .subtitle {
   color: var(--secondary);
-  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
   font-size: 1.1rem;
 }
 
@@ -186,7 +188,8 @@ b {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1rem;
-  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
