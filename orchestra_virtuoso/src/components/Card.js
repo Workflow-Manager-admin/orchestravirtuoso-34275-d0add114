@@ -6,10 +6,19 @@ import "../App.css";
  * Reusable Card component for feature previews.
  * Props: icon, image, title, description, link, cta
  */
+import { Link } from "react-router-dom";
+
 function Card({ icon, image, title, description, link, cta }) {
+  // If link is an internal route, use <Link>
+  const isInternal = link && link.startsWith("/");
+  const Wrapper = isInternal ? Link : "a";
+  const props = isInternal
+    ? { to: link }
+    : { href: link, target: "_blank", rel: "noopener noreferrer" };
+
   return (
-    <a
-      href={link}
+    <Wrapper
+      {...props}
       className="card home-feature-card"
       style={{
         display: "flex",
@@ -68,7 +77,7 @@ function Card({ icon, image, title, description, link, cta }) {
           </span>
         )}
       </div>
-    </a>
+    </Wrapper>
   );
 }
 
