@@ -63,9 +63,10 @@ function Card({ icon, image, title, description, link, cta }) {
           <span
             className="btn"
             style={{
+              fontFamily: "'Great Vibes', cursive",
+              fontWeight: 400,
               padding: "7px 18px",
               fontSize: "0.93rem",
-              fontWeight: 500,
               background: "var(--secondary)",
               color: "#1A2236",
               borderRadius: 4,

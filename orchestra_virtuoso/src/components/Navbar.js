@@ -46,8 +46,8 @@ function Navbar() {
             </svg>
           </span>
           <span style={{
-            fontFamily: "'Georgia', 'Times New Roman', Times, serif",
-            fontWeight: 700,
+            fontFamily: "'Great Vibes', cursive",
+            fontWeight: 400,
             fontSize: "1.34rem",
             color: "var(--text-color)"
           }}>
@@ -277,7 +277,8 @@ function NavLink({ to, label, active }) {
       to={to}
       style={{
         margin: "0 2px",
-        fontWeight: 600,
+        fontFamily: "'Great Vibes', cursive",
+        fontWeight: 400,
         letterSpacing: "0.012em",
         background: "none"
       }}
