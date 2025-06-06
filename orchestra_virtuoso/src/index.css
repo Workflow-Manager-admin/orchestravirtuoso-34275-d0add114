@@ -26,10 +26,86 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Universal brown for headings */
+/* Universal brown and enlarged script font for headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-color, #D2B48C);
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  margin-block: 0.7em 0.4em;
+  line-height: 1.15;
 }
+
+/* Responsive and harmonious heading font sizes for orchestral feel */
+h1 {
+  font-size: clamp(3rem, 7vw, 4.6rem);
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: clamp(2.3rem, 5.4vw, 3.5rem);
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  font-size: clamp(1.8rem, 4.2vw, 2.3rem);
+  letter-spacing: 0.005em;
+}
+
+h4 {
+  font-size: clamp(1.29rem, 2.2vw, 1.54rem);
+}
+
+h5 {
+  font-size: clamp(1.1rem, 1.85vw, 1.28rem);
+}
+
+h6 {
+  font-size: clamp(1.03rem, 1.55vw, 1.11rem);
+}
+
+p, li, label, span, strong, b {
+  color: var(--text-color, #D2B48C);
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.16rem;
+}
+
+nav,
+.navbar,
+.navbar-links,
+.navbar .logo,
+.navbar .btn,
+.navbar .btn-dropdown,
+.btn,
+button {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+}
+
+/* Increase navigation font size for elegance */
+.navbar, .navbar-links, .navbar .btn, .navbar .logo, .btn, button {
+  font-size: 1.21rem;
+  letter-spacing: 0.011em;
+}
+
+/* Larger card typography and padding for visual impact */
+.card {
+  font-size: 1.17rem;
+  padding: 2.4rem 2.9rem;
+}
+
+@media (max-width: 700px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.26rem; }
+  nav, .navbar, .navbar-links, .btn, button {
+    font-size: 1.05rem;
+  }
+  .card {
+    font-size: 1.05rem;
+    padding: 1.2rem 1.3rem;
+  }
+}
+
 
 /* Links inherit new text color but remain accented */
 a {
