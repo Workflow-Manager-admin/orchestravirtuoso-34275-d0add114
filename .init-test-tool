@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso"
+}
