@@ -49,7 +49,7 @@ function Navbar() {
             fontFamily: "'Georgia', 'Times New Roman', Times, serif",
             fontWeight: 700,
             fontSize: "1.34rem",
-            color: "var(--base-light)"
+            color: "var(--text-color)"
           }}>
             OrchestraVirtuoso
           </span>
@@ -293,7 +293,7 @@ const dropdownStyleItem = {
   padding: "11px 16px",
   display: "block",
   fontWeight: 500,
-  color: "var(--text-color)",
+  color: "var(--text-color)", // #D2B48C
   background: "none",
   border: "none",
   width: "100%",

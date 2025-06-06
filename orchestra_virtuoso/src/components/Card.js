@@ -45,7 +45,7 @@ function Card({ icon, image, title, description, link, cta }) {
       <div style={{ flex: 1 }}>
         <h3 style={{
           fontFamily: "'Georgia', 'Times New Roman', Times, serif",
-          color: "var(--base-light)",
+          color: "var(--text-color)",
           fontWeight: 700,
           margin: 0,
           fontSize: "1.37rem"
