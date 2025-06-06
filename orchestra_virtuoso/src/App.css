@@ -14,6 +14,12 @@
 }
 
 /* Full viewport coverage, non-boxed */
+/* --- Legibility Adjustments for Script Font ---
+   To increase readability and visual accessibility for cursive/script 'Great Vibes',
+   we increase letter-spacing, boost line-height, and keep font-weight light.
+   Please preserve these overrides for legibility in future edits!
+   Applies to: body, headings, nav, cards, and buttons.
+*/
 body {
   margin: 0;
   font-family: 'Great Vibes', cursive;
@@ -26,6 +32,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* LEGGIBILITY: Add letter-spacing and line-height for cursive body */
+  letter-spacing: 0.037em;
+  line-height: 1.6;
+  font-weight: 400; /* 'Great Vibes' is elegant and more legible at standard/light weight */
   /* Violin-themed background image with subtle SVG notes overlay */
   background:
     linear-gradient(
@@ -52,6 +62,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Legibility note: All typography using script font below
+   should keep added spacing/line-height for readability! */
 /* Unified typography coloring */
 h1, h2, h3, h4, h5, h6,
 .title,
