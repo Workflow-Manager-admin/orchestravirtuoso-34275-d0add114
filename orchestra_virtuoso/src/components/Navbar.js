@@ -46,7 +46,7 @@ function Navbar() {
             </svg>
           </span>
           <span style={{
-            fontFamily: "'Merriweather', serif",
+            fontFamily: "'Georgia', 'Times New Roman', Times, serif",
             fontWeight: 700,
             fontSize: "1.34rem",
             color: "var(--base-light)"
