@@ -26,19 +26,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Violin-themed background image spans entire viewport */
-  background-image:
+  /* Violin-themed background image with subtle SVG notes overlay */
+  background:
     linear-gradient(
       to bottom right,
       rgba(26, 34, 54, 0.93) 0%,
       rgba(46, 64, 87, 0.65) 65%,
       rgba(191, 161, 74, 0.08) 100%
     ),
+    url("./assets/music-notes-overlay.svg"),
     url("./assets/violin.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size:
+    cover,
+    900px 900px,
+    cover;
+  background-position:
+    center,
+    54% 46%,
+    center;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-attachment: fixed, fixed, fixed;
   overflow-x: hidden;
 }
 
