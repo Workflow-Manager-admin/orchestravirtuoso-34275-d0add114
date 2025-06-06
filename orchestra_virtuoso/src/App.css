@@ -36,7 +36,7 @@ body {
   letter-spacing: 0.037em;
   line-height: 1.6;
   font-weight: 400; /* 'Great Vibes' is elegant and more legible at standard/light weight */
-  /* Orchestral NEW background: attached image + dark/blue gradient overlay for readability */
+  /* Orchestral NEW background: attached photo with dark/blue/gold gradient for readability */
   background:
     linear-gradient(
       to bottom right,
@@ -124,7 +124,7 @@ b {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  background: rgba(20, 25, 38, 0.81); /* increased opacity for better readability */
+  background: rgba(20, 25, 38, 0.81); /* increased overlay for readability on photo */
   backdrop-filter: blur(1.4px);
   position: relative;
   z-index: 1;
@@ -332,4 +332,3 @@ button {
    Please do not reduce spacing, letter-spacing, or lighten font further without checking readability.
    If reverting these, consider accessibility for users with dyslexia or visual impairment.
 */
-
