@@ -124,8 +124,8 @@ b {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  background: rgba(27, 28, 42, 0.74);
-  backdrop-filter: blur(0.9px);
+  background: rgba(20, 25, 38, 0.81); /* increased opacity for better readability */
+  backdrop-filter: blur(1.4px);
   position: relative;
   z-index: 1;
   box-sizing: border-box;
