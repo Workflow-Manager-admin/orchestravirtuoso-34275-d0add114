@@ -144,7 +144,7 @@ function HomePage() {
           loading="lazy"
         />
         <div className="subtitle" style={{
-          color: "var(--base-light)",
+          color: "var(--secondary)",
           fontWeight: 600,
           fontSize: "1.15rem",
           letterSpacing: 0.01
@@ -154,7 +154,7 @@ function HomePage() {
               fontFamily: "'Georgia', 'Times New Roman', Times, serif",
               fontWeight: 800,
               fontSize: "3.3rem",
-              color: "var(--base-light)",
+              color: "var(--text-color)",
               margin: "4px 0"
             }}>
           Orchestra<span style={{color: "var(--secondary)", letterSpacing: "0.018em"}}>Virtuoso</span>
