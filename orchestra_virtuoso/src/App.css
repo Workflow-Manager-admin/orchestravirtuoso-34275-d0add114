@@ -331,3 +331,9 @@ button {
 .card:hover {
   box-shadow: 0 4px 28px 0 rgba(61, 54, 98, 0.13);
 }
+
+/* --- END SCRIPT FONT LEGIBILITY EDITS ---
+   Please do not reduce spacing, letter-spacing, or lighten font further without checking readability.
+   If reverting these, consider accessibility for users with dyslexia or visual impairment.
+*/
+
