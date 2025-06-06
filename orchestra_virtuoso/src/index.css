@@ -1,6 +1,3 @@
-/* Import "Merriweather" from Google Fonts for refined classical typography */
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
-
 /* Elegant base resets and polish */
 *,
 *::before,
@@ -13,7 +10,7 @@
 html, body {
   height: 100%;
   font-size: 17px;
-  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   background-color: var(--base-dark, #1A2236);
   color: var(--text-color, #fff);
   -webkit-font-smoothing: antialiased;

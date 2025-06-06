@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
   background-color: var(--base-dark);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
