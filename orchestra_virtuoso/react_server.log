@@ -18,3 +18,14 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src'
+ERROR in ./src/App.js 5:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src'
+
+ERROR in ./src/components/Navbar.js 5:0-40
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src/components'
+
+webpack compiled with 2 errors

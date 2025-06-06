@@ -1,36 +1,47 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Lessons from "./pages/Lessons";
+import Practice from "./pages/Practice";
+import Library from "./pages/Library";
+import Dashboard from "./pages/Dashboard";
+import Community from "./pages/Community";
+
+/**
+ * Main App component with routing for all core feature pages.
+ */
 
 function App() {
   return (
-    <div className="app">
-      <nav className="navbar">
-        <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
-            </div>
-            <button className="btn">Template Button</button>
-          </div>
-        </div>
-      </nav>
-
-      <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">orchestra_virtuoso</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
-      </main>
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="container">
+                  <div className="hero">
+                    <div className="subtitle">Immerse Yourself in the World of Violin</div>
+                    <h1 className="title">OrchestraVirtuoso</h1>
+                    <div className="description">
+                      Learn, practice, and connect in a refined, orchestral environment.
+                    </div>
+                  </div>
+                </div>
+              }
+            />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/lessons" element={<Lessons />} />
+            <Route path="/practice" element={<Practice />} />
+            <Route path="/library" element={<Library />} />
+            <Route path="/community" element={<Community />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
