@@ -205,7 +205,17 @@ function App() {
     <Router>
       <div className="app">
         <Navbar />
-        <main>
+        <main
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            marginTop: 72,
+            minHeight: "calc(100vh - 72px)",
+            width: "100vw",
+            boxSizing: "border-box",
+          }}
+        >
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/dashboard" element={<Dashboard />} />
