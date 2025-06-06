@@ -29,3 +29,24 @@ ERROR in ./src/components/Navbar.js 5:0-40
 Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src/components'
 
 webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/node_modules/react-router-dom isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 13 hidden lines
+
+ERROR in ./src/App.js 5:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src'
+
+ERROR in ./src/components/Navbar.js 5:0-40
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/orchestravirtuoso-34275-d0add114/orchestra_virtuoso/src/components'
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
