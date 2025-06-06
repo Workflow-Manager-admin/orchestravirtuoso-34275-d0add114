@@ -39,6 +39,33 @@ body {
   background-attachment: fixed;
 }
 
+/* Apply new light brown to all heading and text styles */
+h1, h2, h3, h4, h5, h6,
+.title,
+.subtitle,
+.description,
+p,
+span,
+label,
+li,
+strong,
+b {
+  color: var(--text-color);
+}
+
+.description {
+  color: var(--text-secondary);
+}
+
+/* Ensure subtitle and titles fit brand accent (override legacy if needed) */
+.title {
+  color: var(--text-color);
+}
+
+.subtitle {
+  color: var(--secondary);
+}
+
 .app {
   min-height: 100vh;
   display: flex;
