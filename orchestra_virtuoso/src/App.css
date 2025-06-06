@@ -264,6 +264,7 @@ b {
   transition: box-shadow 0.16s, background 0.16s;
   display: flex;
   flex: 1 1 auto;
+  font-family: 'Great Vibes', cursive;
 }
 .card:hover {
   box-shadow: 0 4px 28px 0 rgba(61, 54, 98, 0.13);
