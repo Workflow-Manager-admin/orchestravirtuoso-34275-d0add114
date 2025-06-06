@@ -10,6 +10,11 @@
 /* Import a free script font similar to 'Mr Stylish Script' */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+/* --- CURSIVE/SCRIPT LEGIBILITY ENHANCEMENTS ---
+   Increases letter-spacing and line-height for all elements using 'Great Vibes', cursive.
+   DO NOT REMOVE unless replacing with more accessible settings.
+   Applies to: html, body, all headings, nav, .card, .btn, button, p, span, etc.
+*/
 html, body {
   height: 100vh;
   min-height: 100vh;
@@ -24,15 +29,20 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   box-sizing: border-box;
+  letter-spacing: 0.036em;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* Universal brown and enlarged script font for headings */
+/* SCRIPT HEADINGS: keep readable spacing */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-color, #D2B48C);
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
   margin-block: 0.7em 0.4em;
-  line-height: 1.15;
+  line-height: 1.22;
+  letter-spacing: 0.037em;
 }
 
 /* Responsive and harmonious heading font sizes for orchestral feel */
