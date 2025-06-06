@@ -1,9 +1,19 @@
+/* Branding variables and elegant theme for OrchestraVirtuoso */
+
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* Brand palette */
+  --primary: #1A2236;
+  --secondary: #BFA14A;
+  --accent: #2E4057;
+
+  /* Supporting palette */
+  --base-light: var(--secondary); /* Use secondary gold as highlight */
+  --base-dark: var(--primary);    /* Use primary navy as background */
+  --text-color: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.82);
+  --border-color: rgba(191, 161, 74, 0.18); /* gold accent border */
+  --card-bg: #202944;
+  --button-shadow: 0 2px 16px 0 rgba(42, 50, 90, 0.14);
 }
 
 body {
