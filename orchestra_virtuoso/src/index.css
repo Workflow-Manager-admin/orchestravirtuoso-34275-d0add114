@@ -12,9 +12,34 @@ html, body {
   font-size: 17px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
   background-color: var(--base-dark, #1A2236);
-  color: var(--text-color, #fff);
+  color: var(--text-color, #D2B48C);  /* Light brown */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Universal brown for headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color, #D2B48C);
+}
+
+/* Links inherit new text color but remain accented */
+a {
+  color: var(--text-color, #D2B48C);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--secondary, #BFA14A);
+}
+
+/* Paragraph and list text is also light brown */
+p, li, label, span, strong, b {
+  color: var(--text-color, #D2B48C);
+}
+
+/* Description/secondary text gets lighter brown */
+.description {
+  color: var(--text-secondary, rgba(210,180,140,0.78));
 }
 
 body {
