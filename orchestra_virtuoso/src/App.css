@@ -37,24 +37,21 @@ body {
   line-height: 1.6;
   font-weight: 400; /* 'Great Vibes' is elegant and more legible at standard/light weight */
   /* Orchestral NEW background: attached photo with dark/blue/gold gradient for readability */
+  /* Orchestral NEW background: attached photo and strong darkening overlay for readability */
   background:
     linear-gradient(
-      to bottom right,
-      rgba(26, 34, 54, 0.91) 0%,
-      rgba(46, 64, 87, 0.68) 65%,
-      rgba(191, 161, 74, 0.11) 100%
+      120deg,
+      rgba(26, 34, 54, 0.93) 0%,
+      rgba(46, 64, 87, 0.74) 55%,
+      rgba(191, 161, 74, 0.09) 100%
     ),
     url("./assets/20250606_132756_OIP.jpg");
-  background-size:
-    cover,
-    cover;
-  background-position:
-    center,
-    center;
-  background-repeat:
-    no-repeat,
-    no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
+  /* A subtle blur can further help with legibility if enabled: */
+  /* backdrop-filter: blur(1.2px); */
   overflow-x: hidden;
 }
 
