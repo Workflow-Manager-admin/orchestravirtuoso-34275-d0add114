@@ -36,29 +36,25 @@ body {
   letter-spacing: 0.037em;
   line-height: 1.6;
   font-weight: 400; /* 'Great Vibes' is elegant and more legible at standard/light weight */
-  /* Violin-themed background image with subtle SVG notes overlay */
+  /* Orchestral NEW background: attached image + dark/blue gradient overlay for readability */
   background:
     linear-gradient(
       to bottom right,
-      rgba(26, 34, 54, 0.93) 0%,
-      rgba(46, 64, 87, 0.65) 65%,
-      rgba(191, 161, 74, 0.08) 100%
+      rgba(26, 34, 54, 0.91) 0%,
+      rgba(46, 64, 87, 0.68) 65%,
+      rgba(191, 161, 74, 0.11) 100%
     ),
-    url("./assets/music-notes-overlay.svg"),
-    url("./assets/violin.png");
+    url("./assets/20250606_132756_OIP.jpg");
   background-size:
     cover,
-    900px 900px,
     cover;
   background-position:
     center,
-    54% 46%,
     center;
   background-repeat:
     no-repeat,
-    no-repeat,
     no-repeat;
-  background-attachment: fixed, fixed, fixed;
+  background-attachment: fixed, fixed;
   overflow-x: hidden;
 }
 
