@@ -43,12 +43,11 @@ body {
       rgba(30, 38, 56, 0.86) 55%,
       rgba(47, 64, 87, 0.75) 80%,
       rgba(191, 161, 74, 0.11) 100%
-    ),
-    url("./assets/20250606_132756_OIP.jpg");
-  background-size: cover, cover;
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
+    );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* Optionally enable blurring if readability suffers: */
   /* backdrop-filter: blur(1.2px); */
   overflow-x: hidden;
