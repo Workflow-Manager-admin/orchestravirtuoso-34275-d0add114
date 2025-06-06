@@ -12,19 +12,19 @@ function Lessons() {
       title: "Violin Basics – Posture & Bow Hold",
       desc:
         "Learn the proper posture and how to hold the bow for a beautiful sound.",
-      url: "https://www.youtube.com/embed/EQNwt1_uTxc",
+      url: "https://www.youtube.com/watch?v=EQNwt1_uTxc",
     },
     {
       title: "First Notes: Open Strings",
       desc:
         "Let’s sound the first notes using open strings and basic bowing patterns.",
-      url: "https://www.youtube.com/embed/TwNBWlSg5L8",
+      url: "https://www.youtube.com/watch?v=TwNBWlSg5L8",
     },
     {
       title: "Beginner Song: Twinkle, Twinkle Variations",
       desc:
         "Play a simple song and explore beginner-friendly variations.",
-      url: "https://www.youtube.com/embed/bdTrp0YwL5Q",
+      url: "https://www.youtube.com/watch?v=bdTrp0YwL5Q",
     }
   ];
 
