@@ -224,6 +224,16 @@ b {
 }
 
 /* Button style */
+/* --- SCRIPT BUTTON LEGIBILITY (for all buttons using 'Great Vibes') --- */
+.btn,
+button {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400 !important;
+  letter-spacing: 0.032em !important;
+  line-height: 1.13;
+}
+
+/* Additional improvements for visual weight and touch targets */
 .btn {
   background-color: var(--base-light);
   color: white;
@@ -233,6 +243,8 @@ b {
   font-size: 1rem;
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
+  letter-spacing: 0.032em;
+  line-height: 1.13;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
