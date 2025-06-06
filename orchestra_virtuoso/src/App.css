@@ -116,3 +116,22 @@ body {
   padding: 12px 24px;
   font-size: 1.1rem;
 }
+
+/* Homepage feature preview card enhancements */
+.home-feature-card {
+  margin: 0 !important;
+  border-radius: 13px;
+  border-width: 2px;
+  background: linear-gradient(98deg, #222b48 89%, rgba(191,161,74,0.09) 100%);
+  box-shadow: 0 3px 18px 0 rgba(45,55,86,0.11);
+  cursor: pointer;
+  transition: box-shadow 0.16s, background 0.17s;
+}
+.home-feature-card:hover,
+.home-feature-card:focus {
+  background: linear-gradient(100deg, #232946 85%, rgba(191,161,74,0.18) 100%);
+  color: var(--secondary);
+  box-shadow: 0 7px 32px 0 rgba(61, 54, 98, 0.19);
+  outline: 2px solid var(--secondary, #BFA14A);
+  text-decoration: none;
+}
